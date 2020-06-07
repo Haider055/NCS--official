@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookingform">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_margin="16dp"
+        android:id="@+id/tool"
+        android:background="#03C04A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/back"
+                android:text="Booking form"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:id="@+id/sdetail"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Shipper and origin details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="First name">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_below="@id/name1"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Last name">
+
+                    </EditText>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/province"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/name2"
+                        android:layout_height="wrap_content">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/city"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/province"
+                        android:layout_height="wrap_content">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+                    <EditText
+                        android:layout_below="@id/city"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/postal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Postal code">
+
+                    </EditText>
+                    <EditText
+                        android:layout_below="@id/postal"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Complete address">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_below="@id/adress"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/cnic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="CNIC">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_below="@id/cnic"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/mobilenum1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Mobile No 1">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_below="@id/mobilenum1"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/mobilenum2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Mobile No 2">
+
+                    </EditText>
+                    <EditText
+                        android:layout_below="@id/mobilenum2"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Email Address">
+
+                    </EditText>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
